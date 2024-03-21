@@ -1,4 +1,4 @@
-froma tutle import*
+froma tutle importe*
 printe luke sikarulidza
 pront man face boys
 prante my school bag
@@ -9,7 +9,7 @@ i xwillg used batgs
 i hateeeds goumsss
 sifjafajf fjjfs monge gingorg
 boe plasas stiiiteitp
-xi chesnf dgsz vdvf b  v  as jk
+xi chesnf dgsz vdvf b  v  asm jk
 fs f
 t f ee w r e ew w  d d df g g g  f  d s d f ggtegd fh ryh er htr g tr h drg er gr g td jyf kj gh kg k gh kg hk g k gh k hg k k  kg hk gh
 h f cg hfg cg n vhghm  mgknkglkmngfnm gm,h mghlm,hg  b  bzdvb f v dscds cs c s  sa fe f saf d gsd gsg g nh ,gh,mkghmlh,m n n n mn m k kk k k k j uy gf f  fd d  ff  g   h h h   nn bvf dsa dfgh h gf g h gf g b fd fg fd f  df  df gf  g f gf g  fg f g f g f tt tt tt tt tttttdferterggrgrdfdfsfsfsdfsdfsdfsdfffdddffgfdsdffdsdeghdjgdjgdogjd bnd b b    g dt th t h t hj jj  jj j  j j j j j j j 
