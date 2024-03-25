@@ -1,2 +1,3 @@
-for i in range(100):
-    print(str(i) + ".  Luka Sixarulidze")
+for i in range(101):
+    print(str(i) + ".  noob")
+    
