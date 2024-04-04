@@ -1,0 +1,8 @@
+from turtle import*
+print("LUKA SIXARULIDZE")
+print("VIKTORIA SIXARULIDZE")
+print("NINO TSIKORIDZE")
+print("TARIEL MSHVILDADZE")
+print("GODERDZI SIXARULIDZE")
+print("ANA MSHVILDADZE")
+print("NIKA MSHVILDADZE")
