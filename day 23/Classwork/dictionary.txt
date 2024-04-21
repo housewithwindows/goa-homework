@@ -1,0 +1,4 @@
+form თეგი
+<input placeholder=" Type something"
+input თეგი
+type atributi mas gadaecema tu ra tipis gvinda rom iyos input
