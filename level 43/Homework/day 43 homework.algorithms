@@ -1,0 +1,8 @@
+N2-We have to do this formula
+which is sum divided by amount.
+N3-it will have 3 comparisons
+N4-It goes like this a>b and a>c a largest
+if a<b and b>c b largest and if a<b and c>b c largest.
+3 operations
+N5-in worst case it has to do amount-1 
+comparisons.
