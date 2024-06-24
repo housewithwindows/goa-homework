@@ -1,0 +1,46 @@
+#text{
+    color:gray;
+    background-color: darkgray;
+    border-radius: 25px;
+    
+}
+div{
+    text-align: center;
+    color: white;
+    
+    
+}
+
+
+button{
+    background-color:aqua
+}
+#baby{
+    font-size: xx-large;font-family: sans-serif;
+    padding: 80px;
+}
+form{
+    align-items: center;
+    margin: auto;
+
+    
+}
+html{
+    background-color: purple;
+}
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+.button{
+    background-color: white;
+    border: none
+}
+
+
+
+
+
+  
