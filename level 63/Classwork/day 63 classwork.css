@@ -1,0 +1,9 @@
+.box{
+    width: 300px;
+    height: 100px;
+    background-color: green;
+    animation-duration: 500ms;
+}
+.box:hover{
+    transform: translate(90deg);
+}

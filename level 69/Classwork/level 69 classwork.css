@@ -1,0 +1,21 @@
+.box{
+    animation-duration: 10s;
+    animation-name: cool;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+@keyframes cool{
+    0% {width: 150px}
+    10%{background-color: blue; width: 200px;}
+    20%{background-color: greenyellow; width: 250px;}
+    30%{background-color: goldenrod; width: 300px;}
+    40%{background-color: black; width: 350px;}
+    50%{background-color: aquamarine;width: 400px;}
+    60%{background-color: aqua;width: 500px;}
+    70%{background-color: blueviolet;width: 550px;}
+    80%{background-color: navy; width: 600px;}
+    90%{background-color: wheat; width: 650px;}
+    100%{background-color: olive; width: 700px;}  
+}
+    
