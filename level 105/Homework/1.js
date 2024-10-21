@@ -6,12 +6,12 @@
    - Task: Use the `Promise` constructor to create a promise that resolves with the message `"Hello, Promise!"`.
 
 ---*/
-const immediatePromise = new Promise((resolve, reject) => {
+const promise = new Promise((resolve, reject) => {
     resolve("Hello, Promise!");
   });
   
   // Call the promise and handle the resolved value
-  immediatePromise
+  promise
     .then((message) => {
       console.log(message); // Logs "Hello, Promise!"
     })
