@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+// Function to calculate power (m^n)
+int power(int m, int n) {
+    int i, p = 1;
+
+    // Multiply 'm' with itself 'n' times
+    for (i = 1; i <= n; ++i)
+        p = p * m;
+    return p;
+}
+
+int main() {
+    int i, z;
+
+    // Loop through i from 0 to 9
+    for (i = 0; i < 10; ++i) {
+        // Store the power result in 'z'
+        z = power(2, i);
+
+        // Print i, the power of 2^i, and the power of (-3)^i
+        printf("%d %d %d %d\n", i, z, power(2, i), power(-3, i));
+    }
+
+    return 0;
+}
+
+
+
