@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="textarea">Your Message:</label>
+        <textarea id="textarea" maxlength="200"></textarea>
+        <div id="char-count">0/200 characters</div>
+    </form>
+    
+    <script>
+        const textarea = document.getElementById('textarea');
+        const charCount = document.getElementById('char-count');
+    
+        textarea.addEventListener('input', () => {
+            charCount.textContent = `${textarea.value.length}/200 characters`;
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synchronization vs Asynchronization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        section {
+            margin: 20px 0;
+        }
+        pre {
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Synchronization vs Asynchronization</h1>
+
+        <section>
+            <h2>1. What is Synchronization?</h2>
+            <p>
+                Synchronization is the process where tasks are executed one after the other, waiting for the previous one to finish before starting the next one. This ensures order and consistency, especially in shared environments.
+            </p>
+            <h3>Real-Life Example:</h3>
+            <p>Think of a line at a grocery store checkout. Each customer waits for the one in front to finish before they can checkout.</p>
+            <img src="https://example.com/grocery-store-line.jpg" alt="Synchronized grocery store queue">
+            
+            <h3>Code Example:</h3>
+            <pre>
+                <!-- Synchronous JavaScript Example -->
+                function syncTask() {
+                    console.log("Task 1 started");
+                    for (let i = 0; i < 1000000000; i++) {} // Simulate heavy processing
+                    console.log("Task 1 finished");
+                }
+                syncTask();
+                console.log("Next task starts after the first is done");
+            </pre>
+        </section>
+
+        <section>
+            <h2>2. What is Asynchronization?</h2>
+            <p>
+                Asynchronization allows tasks to run independently without waiting for each other to finish. This leads to more efficient task execution, especially in systems that rely on external processes like I/O or network requests.
+            </p>
+            <h3>Real-Life Example:</h3>
+            <p>
+                Imagine you’re waiting for your food order at a restaurant. While you're waiting, you can check your phone or talk to a friend, instead of just sitting idle.
+            </p>
+            <img src="https://example.com/restaurant-waiting.jpg" alt="Asynchronous waiting at a restaurant">
+            
+            <h3>Code Example:</h3>
+            <pre>
+                <!-- Asynchronous JavaScript Example -->
+                function asyncTask() {
+                    console.log("Task 1 started");
+                    setTimeout(() => {
+                        console.log("Task 1 finished after 2 seconds");
+                    }, 2000);
+                }
+                asyncTask();
+                console.log("Next task starts without waiting for the first to finish");
+            </pre>
+        </section>
+
+        <section>
+            <h2>3. Benefits and Drawbacks</h2>
+            <h3>Synchronous:</h3>
+            <ul>
+                <li>Ensures order and consistency</li>
+                <li>Easy to debug due to sequential flow</li>
+                <li>Can be inefficient due to waiting</li>
+            </ul>
+
+            <h3>Asynchronous:</h3>
+            <ul>
+                <li>More efficient, especially for I/O-heavy tasks</li>
+                <li>Allows multitasking</li>
+                <li>Harder to debug due to non-linear flow</li>
+            </ul>
+        </section>
+        
+        <footer>
+            <p>Prepared by [Your Name]</p>
+        </footer>
+    </div>
+
+</body>
+</html>

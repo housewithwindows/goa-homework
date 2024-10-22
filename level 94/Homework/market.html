@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tasks and Shopping Cart</title>
+</head>
+<body>
+    <h1>JavaScript Tasks</h1>
+    
+    <h2>1. Filter Prime Numbers</h2>
+    <script>
+        function isPrime(num) {
+            if (num <= 1) return false;
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i === 0) return false;
+            }
+            return true;
+        }
+        
+        const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+        const primeNumbers = numbers.filter(isPrime);
+        console.log('Prime Numbers:', primeNumbers); // [2, 3, 5, 7, 11]
+    </script>
+
+    <h2>2. Map to Object Conversion</h2>
+    <script>
+        const users = [
+            { id: 1, name: 'Alice' },
+            { id: 2, name: 'Bob' },
+            { id: 3, name: 'Charlie' }
+        ];
+
+        const names = users.map(user => user.name);
+        console.log('User Names:', names); // ['Alice', 'Bob', 'Charlie']
+    </script>
+
+    <h2>3. Filter Objects by Property</h2>
+    <script>
+        const products = [
+            { name: 'Shoes', price: 50 },
+            { name: 'Bag', price: 30 },
+            { name: 'Shirt', price: 20 }
+        ];
+
+        const affordableProducts = products.filter(product => product.price < 40);
+        console.log('Affordable Products:', affordableProducts); // [{ name: 'Bag', price: 30 }, { name: 'Shirt', price: 20 }]
+    </script>
+
+    <h2>4. Map Complex Transformations</h2>
+    <script>
+        const books = [
+            { title: '1984', author: 'George Orwell' },
+            { title: 'To Kill a Mockingbird', author: 'Harper Lee' }
+        ];
+
+        const bookDescriptions = books.map(book => `${book.title} by ${book.author}`);
+        console.log('Book Descriptions:', bookDescriptions); // ['1984 by George Orwell', 'To Kill a Mockingbird by Harper Lee']
+    </script>
+
+    <h2>5. Filter Numbers Based on Multiple Conditions</h2>
+    <script>
+        const numbersArray = [5, 10, 15, 20, 25, 30, 35];
+        const filteredNumbers = numbersArray.filter(num => num > 10 && num % 3 === 0);
+        console.log('Filtered Numbers:', filteredNumbers); // [15, 30]
+    </script>
+
+    <h2>6. Modify Array of Objects (map)</h2>
+    <script>
+        const usersWithAge = [
+            { name: 'Alice', age: 20 },
+            { name: 'Bob', age: 17 },
+            { name: 'Charlie', age: 22 }
+        ];
+
+        const usersWithAdultsFlag = usersWithAge.map(user => ({
+            ...user,
+            isAdult: user.age >= 18
+        }));
+
+        console.log('Users with Adult Flag:', usersWithAdultsFlag);
+    </script>
+
+    <h2>7. Chaining map and filter</h2>
+    <script>
+        const nums = [20, 55, 40, 15, 60, 70, 5];
+        const halved = nums.filter(num => num > 50).map(num => num / 2);
+        console.log('Halved Numbers:', halved); // [27.5, 35]
+    </script>
+
+    <h2>8. Log Word Frequencies (forEach)</h2>
+    <script>
+        const words = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple'];
+        const wordCount = {};
+
+        words.forEach(word => {
+            wordCount[word] = (wordCount[word] || 0) + 1;
+        });
+
+        console.log('Word Frequencies:', wordCount); // { apple: 3, banana: 2, orange: 1 }
+    </script>
+
+    <h2>9. Filter Objects by Nested Property</h2>
+    <script>
+        const cars = [
+            { brand: 'Toyota', model: 'Camry' },
+            { brand: 'Honda', model: 'Civic' },
+            { brand: 'Toyota', model: 'Corolla' }
+        ];
+
+        const toyotaCars = cars.filter(car => car.brand === 'Toyota');
+        console.log('Toyota Cars:', toyotaCars); // [{ brand: 'Toyota', model: 'Camry' }, { brand: 'Toyota', model: 'Corolla' }]
+    </script>
+
+    <h1>Shopping Cart with Discounts</h1>
+    <div>
+        <h2>Add Items to Cart</h2>
+        <form id="cart-form">
+            <input type="text" id="item-name" placeholder="Item Name" required>
+            <input type="number" id="item-price" placeholder="Item Price" required>
+            <input type="number" id="item-quantity" placeholder="Item Quantity" required>
+            <button type="submit">Add to Cart</button>
+        </form>
+        <h3>Shopping Cart</h3>
+        <ul id="cart-items"></ul>
+        <h4>Total Price: <span id="total-price">0</span></h4>
+    </div>
+
+    <script>
+        const cart = [];
+        const form = document.getElementById('cart-form');
+        const cartItems = document.getElementById('cart-items');
+        const totalPriceDisplay = document.getElementById('total-price');
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const name = document.getElementById('item-name').value;
+            const price = parseFloat(document.getElementById('item-price').value);
+            const quantity = parseInt(document.getElementById('item-quantity').value);
+            
+            const item = { name, price, quantity };
+            cart.push(item);
+            updateCart();
+            form.reset();
+        });
+
+        function updateCart() {
+            cartItems.innerHTML = '';
+            let total = 0;
+
+            cart.forEach((item) => {
+                total += item.price * item.quantity;
+                const li = document.createElement('li');
+                li.textContent = `${item.name} - $${item.price} x ${item.quantity}`;
+                cartItems.appendChild(li);
+            });
+
+            if (total > 100) {
+                total *= 0.9; // Apply a 10% discount if total is over $100
+            }
+
+            totalPriceDisplay.textContent = total.toFixed(2);
+        }
+    </script>
+</body>
+</html>

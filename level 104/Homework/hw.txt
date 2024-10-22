@@ -1,0 +1,9 @@
+Single-threaded Nature of JavaScript: JavaScript operates on a single thread, meaning it can only execute one task at a time. However, through the event loop, it can manage asynchronous tasks without blocking the main thread.
+
+Call Stack: This is where JavaScript keeps track of what function is currently being executed. When a function is called, it is pushed onto the stack, and when it returns a result, it's popped off.
+
+Web APIs: When asynchronous functions like setTimeout, AJAX requests, or DOM events are executed, they are handed off to the browser’s Web APIs (or Node.js APIs on the server). These APIs run independently of the JavaScript engine and allow for non-blocking behavior.
+
+Callback Queue: Once a Web API has completed its task (like waiting for a timer or receiving an HTTP response), it pushes a callback function onto the callback queue.
+
+Event Loop: The event loop continuously checks if the call stack is empty. If it is, it pushes the next function from the callback queue onto the stack for execution. This mechanism ensures asynchronous tasks don’t interrupt the execution of synchronous code but still get handled efficiently.
