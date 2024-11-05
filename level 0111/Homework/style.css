@@ -1,0 +1,28 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f2f5;
+    color: #333;
+  }
+  
+  .search-container {
+    margin-top: 20px;
+  }
+  
+  #crypto-input {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+  }
+  
+  #search-btn {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  #crypto-info {
+    margin-top: 20px;
+    font-size: 1.2em;
+  }
+  
