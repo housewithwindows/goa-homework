@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Extended Solutions for Exponent and Logarithmic Exercises
 
 Section 14.21: Solving Exponential Equations
@@ -41,3 +42,48 @@ Rewrite in exponential form: (1/2)^{-3} = x.
 Since (1/2)^{-3} = 2^3 = 8, we get x = 8.
 
 Answer: x = 8
+=======
+Extended Solutions for Exponent and Logarithmic Exercises
+
+Section 14.21: Solving Exponential Equations
+
+Example 1) 3^{x+1} + 3^x = 108
+Solution:
+Rewrite 3^{x+1} as 3 * 3^x to get the equation: 3 * 3^x + 3^x = 108.
+Factor out 3^x: 3^x (3 + 1) = 108, so 3^x * 4 = 108.
+Divide by 4: 3^x = 27.
+Since 27 = 3^3, we get x = 3.
+
+Answer: x = 3
+
+
+Section 14.25: Combining Exponential Expressions
+
+Example 5) 27^{3 + 1} / 9^2 - 3^{x+1} = 163
+Solution:
+Rewrite each base as a power of 3: 27 = 3^3 and 9 = 3^2.
+Thus, 27^{3 + 1} = (3^3)^{3 + 1} = 3^{3*(3+1)} = 3^{12}.
+Similarly, 9^2 = (3^2)^2 = 3^4.
+Rewrite the equation using these values.
+
+This simplifies to:
+
+Answer: [Write solution here]
+
+
+Section 14.29: Solving Logarithmic Equations
+
+Example 1) log_2(x) = 0
+Solution:
+Rewrite in exponential form: 2^0 = x, so x = 1.
+
+Answer: x = 1
+
+
+Example 5- log_(1/2)(x) = -3
+Solution:
+Rewrite in exponential form: (1/2)^{-3} = x.
+Since (1/2)^{-3} = 2^3 = 8, we get x = 8.
+
+Answer: x = 8
+>>>>>>> 15fe0073e996ee1e338a5396a2fef1dabe89efa3

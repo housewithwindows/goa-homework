@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,3 +58,64 @@
 </body>
 </html>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Feed</title>
+  <link rel="stylesheet" href="fb.css">
+</head>
+<body>
+  <!-- ნავიგაციის მენიუ -->
+  <nav>
+    <ul>
+      <li><a href="#" onclick="showSection('newsFeed')">News Feed</a></li>
+      <li><a href="#" onclick="showSection('registration')">Registration</a></li>
+      <li><a href="#" onclick="showSection('authorization')">Authorization</a></li>
+    </ul>
+  </nav>
+
+  <!-- News Feed სექცია -->
+  <section id="newsFeed" class="content-section">
+    <h2>News Feed</h2>
+
+    <!-- ფილტრაციის ველები -->
+    <div id="filterControls">
+      <input type="text" id="searchTitle" placeholder="Search by title" oninput="filterPosts()">
+      <input type="text" id="searchTag" placeholder="Search by tag" oninput="filterPosts()">
+      <button onclick="sortPostsByTitle()">Sort by Title (A-Z)</button>
+    </div>
+
+    <!-- პოსტების კონტეინერი -->
+    <div id="postsContainer"></div>
+  </section>
+
+  <section id="registration" class="content-section" style="display: none;">
+    <h2>Registration</h2>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <section id="authorization" class="content-section" style="display: none;">
+    <h2>Authorization</h2>
+    <form>
+      <label for="authUsername">Username:</label>
+      <input type="text" id="authUsername" name="authUsername">
+      <label for="authPassword">Password:</label>
+      <input type="password" id="authPassword" name="authPassword">
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+  <script src="fb.js"></script>
+</body>
+</html>
+
+>>>>>>> 15fe0073e996ee1e338a5396a2fef1dabe89efa3
