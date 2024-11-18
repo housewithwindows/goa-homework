@@ -25,7 +25,7 @@ setInterval(() => {
     `;
   };
 // script.js
-const fetchCryptoData = async (crypto) => {
+const fetchoCryptoData = async (crypto) => {
     try {
       const response = await fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=${crypto}`);
       const data = await response.json();
@@ -57,7 +57,7 @@ setInterval(() => {
       document.getElementById('crypto-info').innerHTML = 'Please enter a cryptocurrency name.';
     }
   });
-  const renderCryptoData = (cryptoData) => {
+  const renderoCryptoData = (cryptoData) => {
     const { name, current_price, market_cap, price_change_percentage_24h } = cryptoData;
     document.getElementById('crypto-info').innerHTML = `
       <h2>${name}</h2>

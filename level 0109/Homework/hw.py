@@ -64,4 +64,4 @@ Then, subtract the exponents for x: x^5 / x^3 = x^(5-3) = x^2.
 
 Answer: 5x^2
 """
->>>>>>> 15fe0073e996ee1e338a5396a2fef1dabe89efa3
+
