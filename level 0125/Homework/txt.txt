@@ -1,0 +1,2 @@
+if f1 = O(g)
+and f2 = O(g) then f1 + f2 = 2 * O(g)
