@@ -3,9 +3,9 @@ import ProfileCard from './ProfileCard';
 
 const ProfileList = ({ profiles }) => {
   return (
-    <div className="profile-list">
+    <div className="list">
       {profiles.map((user) => (
-        <ProfileCard key={user.id} {...user} />
+        <ProfileCard key={user.id} />
       ))}
     </div>
   );

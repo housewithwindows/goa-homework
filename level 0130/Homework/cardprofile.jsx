@@ -1,12 +1,12 @@
 
 import './ProfileCard.css';
 
-const ProfileCard = ({ name, age, occupation }) => {
+const ProfileCard = ({ name, age, work }) => {
   return (
-    <div className="profile-card">
+    <div className="mee">
       <h2>{name}</h2>
-      <p>Age: {age}</p>
-      <p>Occupation: {occupation}</p>
+      <p>{age}</p>
+      <p>i work as {work}</p>
     </div>
   );
 };

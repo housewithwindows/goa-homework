@@ -1,11 +1,11 @@
 
 import ProductList from './Productlist';
 
-const App = () => {
+const Aboit= () => {
   const products = [
-    { name: 'Product 1', description: 'Description for product 1', price: 100, likes: 10 },
-    { name: 'Product 2', description: 'Description for product 2', price: 150, likes: 20 },
-    { name: 'Product 3', description: 'Description for product 3', price: 200, likes: 30 },
+    { name: 'Product 1', about:'about', price:1919, heart: 10 },
+    { name: 'Product 2', about: 'about', price:69, heart: 20 },
+    { name: 'Product 3', about: 'about', price: 420, heart: 30 },
   ];
 
   return (
@@ -16,7 +16,7 @@ const App = () => {
   );
 };
 
-export default App;
+export default about;
 
 
 
