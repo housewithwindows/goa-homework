@@ -6,14 +6,14 @@ export default function App() {
   const [accounts, setAccounts] = useState([]);
   const [account, setAccount] = useState(null);
 
-  // Sync account to localStorage
+  
   useEffect(() => {
     localStorage.setItem("account", JSON.stringify(account));
     localStorage.setItem("accounts", JSON.stringify(accounts));
     localStorage.setItem("students", JSON.stringify(students));
   }, [account, accounts, students]);
 
-  // Load accounts and account from localStorage on mount
+  
   useEffect(() => {
     setStudents(JSON.parse(localStorage.getItem("students")) || []);
     setAccounts(JSON.parse(localStorage.getItem("accounts")) || []);
