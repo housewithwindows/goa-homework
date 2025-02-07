@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const App = () => {
-  const [time, setTime] = useState(0); // initial time set by the user
-  const [remainingTime, setRemainingTime] = useState(0); // countdown time
+  const [time, setTime] = useState(0); 
+  const [remainingTime, setRemainingTime] = useState(0); 
   const [isRunning, setIsRunning] = useState(false);
-  const timerRef = useRef(null);
+  const [intervalId, setIntervalId] = useState(null); 
 
   useEffect(() => {
     const savedTime = localStorage.getItem('remainingTime');
@@ -13,23 +13,24 @@ const App = () => {
       setIsRunning(true);
     }
 
-    return () => clearInterval(timerRef.current);
-  }, []);
+    return () => clearInterval(intervalId);
+  }, [intervalId]);
 
   useEffect(() => {
     if (isRunning && remainingTime > 0) {
-      timerRef.current = setInterval(() => {
+      const id = setInterval(() => {
         setRemainingTime(prevTime => {
           const newTime = prevTime - 1;
           localStorage.setItem('remainingTime', newTime);
           return newTime;
         });
       }, 1000);
+      setIntervalId(id);
     } else if (remainingTime <= 0) {
-      clearInterval(timerRef.current);
+      clearInterval(intervalId);
       localStorage.removeItem('remainingTime');
     }
-    return () => clearInterval(timerRef.current);
+    return () => clearInterval(intervalId);
   }, [isRunning, remainingTime]);
 
   const handleStart = () => {
@@ -39,12 +40,12 @@ const App = () => {
 
   const handleStop = () => {
     setIsRunning(false);
-    clearInterval(timerRef.current);
+    clearInterval(intervalId);
   };
 
   const handleReset = () => {
     setRemainingTime(time);
-    clearInterval(timerRef.current);
+    clearInterval(intervalId);
     localStorage.removeItem('remainingTime');
   };
 
@@ -66,3 +67,4 @@ const App = () => {
 };
 
 export default App;
+
