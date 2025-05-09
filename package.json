@@ -5,5 +5,8 @@
     "react-router-dom": "^7.3.0",
     "route": "^0.2.5",
     "router": "^2.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
   }
 }
