@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react";
-export default function App() {
+const App = () => {
   const [count, setCount] = useState(0);
   const Memo = useMemo(() => count, [count]);
 
@@ -16,3 +16,4 @@ export default function App() {
     </>
   );
 }
+export default App
