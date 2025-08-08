@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "make": "Toyota",
+    "model": "Corolla",
+    "year": 2020,
+    "color": "White"
+  },
+  {
+    "id": 2,
+    "make": "Honda",
+    "model": "Civic",
+    "year": 2019,
+    "color": "Black"
+  },
+  {
+    "id": 3,
+    "make": "Ford",
+    "model": "Focus",
+    "year": 2018,
+    "color": "Blue"
+  },
+  {
+    "id": 4,
+    "make": "Chevrolet",
+    "model": "Malibu",
+    "year": 2021,
+    "color": "Silver"
+  },
+  {
+    "id": 5,
+    "make": "BMW",
+    "model": "3 Series",
+    "year": 2022,
+    "color": "Red"
+  },
+  {
+    "id": 6,
+    "make": "Mercedes-Benz",
+    "model": "C-Class",
+    "year": 2020,
+    "color": "Gray"
+  },
+  {
+    "id": 7,
+    "make": "Hyundai",
+    "model": "Elantra",
+    "year": 2019,
+    "color": "White"
+  },
+  {
+    "id": 8,
+    "make": "Kia",
+    "model": "Optima",
+    "year": 2017,
+    "color": "Blue"
+  },
+  {
+    "id": 9,
+    "make": "Audi",
+    "model": "A4",
+    "year": 2023,
+    "color": "Black"
+  },
+  {
+    "id": 10,
+    "make": "Volkswagen",
+    "model": "Passat",
+    "year": 2021,
+    "color": "Green"
+  }
+]
