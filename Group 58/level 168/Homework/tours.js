@@ -25,7 +25,7 @@ app.get('/tours/:id', (req, res) => {
 });
 app.delete('/tours/:id', (req,res) => {
     const tourId = parseInt(req.params.id); 
-    const filteredTours = cars.filter(c => c.id !== tourId)
+    const filteredTours = tours.filter(t => t.id !== tourId)
     return res.send(filteredTours)
 })
 
